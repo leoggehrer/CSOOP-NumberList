@@ -77,4 +77,4 @@ Erstellen Sie eine dynamische Liste 'ListOfNumbers' mit folgender Funktion:
 
 ## Quellen
 
-**Viel Erfolg!**
+<center>Viel Erfolg!</center>
