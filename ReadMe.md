@@ -59,6 +59,15 @@ Erstellen Sie eine dynamische Liste 'ListOfNumbers' mit folgender Funktion:
         {
         ...
         }
+
+        /// <summary>
+        /// Converts the list to an array.
+        /// </summary>
+        /// <returns>The list of values as an array.</returns>
+        public int[] ToArray()
+        {
+         ...
+        }
     }
 
 ```

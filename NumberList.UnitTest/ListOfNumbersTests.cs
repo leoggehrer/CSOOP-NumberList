@@ -205,5 +205,28 @@ namespace NumberList.UnitTest
                 Assert.AreEqual(expected[i], list.GetAt(i));
             }
         }
+
+        [TestMethod()]
+        public void T14_EmptyList_To_EmptyArray()
+        {
+            int[] expected = Array.Empty<int>();
+            ListOfNumbers list = new ListOfNumbers();
+
+            CollectionAssert.AreEqual(expected, list.ToArray());
+        }
+
+        [TestMethod()]
+        public void T15_List_With3Value_ToArray()
+        {
+            int[] expected = new[] { 5, 12, 16 };
+            int[] insertElems = new[] { 12, 5, 16 };
+            ListOfNumbers list = new ListOfNumbers();
+
+            for (int i = 0; i < insertElems.Length; i++)
+            {
+                list.Insert(insertElems[i]);
+            }
+            CollectionAssert.AreEqual(expected, list.ToArray());
+        }
     }
 }
