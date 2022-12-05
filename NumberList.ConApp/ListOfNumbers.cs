@@ -130,5 +130,22 @@
                 }
             }
         }
+        /// <summary>
+        /// Converts the list to an array.
+        /// </summary>
+        /// <returns>The list of values as an array.</returns>
+        public int[] ToArray()
+        {
+            int idx = 0;
+            int[] result = new int[Count];
+            Element? run = first;
+
+            while (run != null)
+            {
+                result[idx++] = run.Data;
+                run = run.Next;
+            }
+            return result;
+        }
     }
 }
